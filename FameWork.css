@@ -1,0 +1,425 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		8;
+	dw-num-cols-tablet:		16;
+	dw-num-cols-desktop:	24;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridfull {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100.00%;
+}
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#onetwelfth {
+width: 7.563%;
+margin-left: 0;
+}
+
+#twotwelfths {
+width: 7.563%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#pushtentwelfths {
+width: 100%;
+clear: both;
+margin-left: 0;
+position: static;
+height: auto;
+}
+#onesixth {
+width: 15.9663%;
+margin-left: 0;
+}
+
+#tentwelfths {
+width: 100%;
+}
+
+#twosixths {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+#oneeighth {
+width: 100%;
+}
+#twoeighths {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+#pushthreefourths {
+width: 100%;
+}
+#onefourth {
+width: 100%;
+}
+
+#onehalf {
+width: 49.5798%;
+margin-left: 0;
+}
+
+#twohalfs {
+width: 49.5798%;
+margin-left: 0.8403%;
+clear: none;
+}
+#threeeighths {
+width: 100%;
+}
+#pushthreeeighths {
+width: 100%;
+}
+#pushfiveeighths {
+width: 100%;
+}
+#onethird {
+width: 100%;
+}
+#onethirdselect{ 
+width: 100%; 
+}
+
+#twothirdstrue {
+width: 100%;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridfull {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100.00%;
+}
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+
+#onetwelfth {
+width: 7.563%;
+margin-left: 0;
+}
+
+#twotwelfths {
+width: 7.563%;
+margin-left: 0.8403%;
+}
+#div1 {
+width: 15.9663%;
+margin-left: 0.8403%;
+position: static;
+height: auto;
+}
+#pushtentwelfths {
+width: 83.1932%;
+margin-left: 0.8403%;
+clear: none;
+position: static;
+height: auto;
+}
+
+#onesixth {
+width: 15.9663%;
+margin-left: 0;
+}
+
+#tentwelfths {
+width: 83.1932%;
+margin-left: 0.8403%;
+margin-left: 0;
+}
+#twosixths {
+width: 15.9663%;
+margin-left: 0.8403%;
+clear: none;
+
+}
+#oneeighth {
+width: 17.7215%;
+margin-left: 0;
+}
+#twoeighths {
+width: 17.7215%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#threefourths {
+width: 62.0253%;
+margin-left: 0;
+}
+
+#pushthreefourths {
+width: 62.0253%;
+margin-left: 0.8403%;
+clear: none;
+}
+#onefourth {
+width: 24.3697%;
+margin-left: 0;
+}
+
+#twofourths {
+width: 24.3697%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#onehalf {
+width: 49.5798%;
+margin-left: 0;
+}
+
+#twohalfs {
+width: 49.5798%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#threeeighths {
+width: 36.9747%;
+margin-left: 0;
+clear: none;
+}
+
+#pushthreeeighths {
+width: 36.9747%;
+margin-left: 0.8403%;
+clear: none;
+}
+#pushfiveeighths {
+width: 100%;
+}
+#onethird {
+width: 32.7731%;
+margin-left: 0;
+clear: none;
+}
+
+#onethirdselect {
+width: 32.7731%;
+margin-left: 0.8403%;
+clear: none;
+}
+#twothirdstrue {
+width: 66.3865%;
+margin-left: 0.8403%;
+clear: none;
+
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridfull {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100.00%;
+}
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+
+#onetwelfth {
+width: 7.563%;
+margin-left: 0;
+}
+
+#twotwelfths {
+width: 7.563%;
+margin-left: 0.8403%;
+}
+#div1 {
+width: 15.9663%;
+margin-left: 0;
+position: static;
+height: auto;
+}
+#pushtentwelfths {
+width: 83.1932%;
+margin-left: 0.8403%;
+clear: none;
+position: static;
+height: auto;
+}
+
+#onesixth {
+width: 15.9663%;
+margin-left: 0;
+}
+
+#tentwelfths {
+width: 83.1932%;
+margin-left: 0;
+}
+#twosixths {
+width: 15.9663%;
+margin-left: 0.8403%;
+clear: none;
+
+}
+#oneeighth {
+width: 17.7215%;
+margin-left: 0;
+}
+#twoeighths {
+width: 17.7215%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#threefourths {
+width: 62.0253%;
+margin-left: 0;
+}
+
+#pushthreefourths {
+width: 49.5798%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#onefourth {
+width: 24.3697%;
+margin-left: 0;
+}
+
+#twofourths {
+width: 24.3697%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#onehalf {
+width: 49.5798%;
+margin-left: 0;
+}
+
+#twohalfs {
+width: 49.5798%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#threeeighths {
+width: 36.9747%;
+margin-left: 0;
+clear: none;
+}
+
+#pushthreeeighths {
+width: 36.9747%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#fiveeighths {
+width: 62.1848%;
+margin-left: 0;
+clear: none;
+}
+
+#pushfiveeighths {
+width: 62.1848%;
+margin-left: 0.8403%;
+clear: none;
+}
+
+#onethird {
+width: 32.7731%;
+margin-left: 0;
+clear: none;
+}
+
+#onethirdselect {
+width: 32.7731%;
+margin-left: 0.8403%;
+clear: none;
+}
+#twothirdstrue {
+width: 66.3865%;
+margin-left: 0.8403%;
+clear: none;
+
+}
+
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
