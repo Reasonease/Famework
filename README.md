@@ -1,0 +1,4 @@
+Famework
+========
+
+Famework is the mother of all Responsive CSS frameworks. It should be completed the 1st week of June 2012. This is a pure code-example in 3 separate files. I have been chomping at the bit to create a Responsive CSS Framework that has every combination of possible Widths &amp; this will be it. There will also be an index page for reference. You will need a Respond.min.js and that is all you will need. I have built Responsive Frameworks before but need something which includes every feasible combination of margins &amp; spacing. The way you write Fameworks is say you want 4 column grid, you would write id=onefourth then THREE consecutive id=twofourths . There will also be special divs. These will be self explanitory, if you want to start with a say threeeighths you write that but if you want that later in the page you use the PUSH reference. Cheers- Reasonease 
